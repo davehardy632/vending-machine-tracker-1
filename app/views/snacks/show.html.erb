@@ -1,0 +1,8 @@
+<h1><%= @snack.name %> Show Page </h1>
+
+<div>
+   <% @snack.machines.each do |machine| %>
+   <%= machine.location %>
+   <%= machine.average_snack_price %>
+   <% end %>
+</div>
